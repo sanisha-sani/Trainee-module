@@ -1,0 +1,138 @@
+{%extends 'index_trainee.html'%} {% load static %} {% block content %}
+
+
+<div class="row mt-5">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8 grid-margin ">
+        <div class="card">
+            <div class="card-body" style="height:auto">
+                <h3 class="page-title ">Topic List</h3>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th class="text-white ">SNo</th>
+                                <th class="text-white">
+                                    Topics
+                                </th>
+                                <th class="text-white">
+                                    Assigned Date
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <br>
+                            <tr style="color:white">
+                                <td>
+                                    1
+                                </td>
+                                <td data-toggle="modal" data-target="#myModal">
+                                    Topic 1
+                                </td>
+                                <td>
+                                    02/03/2022
+                                </td>
+
+                            </tr>
+                            <tr style="color:white">
+                                <td>
+                                    2
+                                </td>
+                                <td data-toggle="modal" data-target="#myModal">
+                                    Topic 2
+                                </td>
+                                <td>
+                                    03/03/2022
+                                </td>
+
+                            </tr>
+                            <tr style="color:white">
+                                <td>
+                                    3
+                                </td>
+                                <td data-toggle="modal" data-target="#myModal">
+                                    Topic 3
+                                </td>
+                                <td>
+                                    05/03/2022
+                                </td>
+
+                            </tr>
+                            <tr style="color:white">
+                                <td>
+                                    4
+                                </td>
+                                <td data-toggle="modal" data-target="#myModal">
+                                    Topic 4
+                                </td>
+                                <td>
+                                    07/03/2022
+                                </td>
+
+                            </tr>
+                            <tr style="color:white">
+                                <td>
+                                    5
+                                </td>
+                                <td data-toggle="modal" data-target="#myModal">
+                                    Topic 5
+                                </td>
+                                <td>
+                                    08/03/2022
+                                </td>
+
+                            </tr>
+                            <tr style="color:white">
+                                <td>
+                                    6
+                                </td>
+                                <td data-toggle="modal" data-target="#myModal">
+                                    Topic 6
+                                </td>
+                                <td>
+                                    09/03/2022
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal" id="myModal">
+    <div class="modal-dialog">
+        <div class="col-12 grid-margin stretch-card bg-dark text-light modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Review</h4>
+                <button type="button" style="color: white;" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <textarea class="col-12 grid-margin stretch-card  text-light"
+                    style="background-color: rgba(255, 255, 255, 0.267);" rows="6"></textarea>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-primary btn-icon-text" data-dismiss="modal"><i
+                        class="mdi mdi-file-check text-info" style="font-size:18px; "></i>Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal end -->
+
+
+
+
+{%endblock%}
