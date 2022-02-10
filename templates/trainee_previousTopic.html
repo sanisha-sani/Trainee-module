@@ -1,17 +1,26 @@
-{%extends 'index_trainee.html'%} {% load static %} {% block content %}
+{%extends 'trainee_index.html'%} {% load static %} {% block content %}
 
+<style>
+    table tr {
+        cursor: pointer;
+    }
+</style>
 
 <div class="row mt-5">
     <div class="col-sm-2"></div>
     <div class="col-sm-8 grid-margin ">
         <div class="card">
             <div class="card-body" style="height:auto">
-                <h3 class="page-title ">Topic List</h3>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <h3 class="page-title ">Topic List</h3>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12"><br></div>
+
                 <div class="table-responsive">
                     <table class="table">
                         <thead>
                             <tr>
-                                <th class="text-white ">SNo</th>
+                                <th class="text-white " style="padding-left:36px;">SNo</th>
                                 <th class="text-white">
                                     Topics
                                 </th>
@@ -22,8 +31,8 @@
                         </thead>
                         <tbody>
                             <br>
-                            <tr style="color:white">
-                                <td>
+                            <tr>
+                                <td style="padding-left:40px;">
                                     1
                                 </td>
                                 <td>
@@ -34,8 +43,8 @@
                                 </td>
 
                             </tr>
-                            <tr style="color:white">
-                                <td>
+                            <tr>
+                                <td style="padding-left:40px;">
                                     2
                                 </td>
                                 <td>
@@ -46,8 +55,8 @@
                                 </td>
 
                             </tr>
-                            <tr style="color:white">
-                                <td>
+                            <tr>
+                                <td style="padding-left:40px;">
                                     3
                                 </td>
                                 <td>
@@ -58,8 +67,8 @@
                                 </td>
 
                             </tr>
-                            <tr style="color:white">
-                                <td>
+                            <tr>
+                                <td style="padding-left:40px;">
                                     4
                                 </td>
                                 <td>
@@ -70,8 +79,8 @@
                                 </td>
 
                             </tr>
-                            <tr style="color:white">
-                                <td>
+                            <tr>
+                                <td style="padding-left:40px;">
                                     5
                                 </td>
                                 <td>
@@ -82,8 +91,8 @@
                                 </td>
 
                             </tr>
-                            <tr style="color:white">
-                                <td>
+                            <tr>
+                                <td style="padding-left:40px;">
                                     6
                                 </td>
                                 <td>
@@ -93,8 +102,6 @@
                                     09/03/2022
                                 </td>
                             </tr>
-
-
                         </tbody>
                     </table>
                 </div>
@@ -102,13 +109,5 @@
         </div>
     </div>
 </div>
-</div>
 
-
-
-
-
-
-
-
-{%endblock%}
+{% endblock %}
